@@ -1,11 +1,11 @@
 import { signal } from "@preact/signals-react";
 
-export type StopLight = {
+export type StopLightState = {
     color: 'green' | 'yellow' | 'red';
     duration: number;
 }
 
-export const currentLight = signal<StopLight>({
+export const currentLightState = signal<StopLightState>({
     color: 'red'
     , duration: 1000
 })
