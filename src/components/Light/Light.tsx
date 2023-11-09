@@ -1,7 +1,7 @@
-import { StopLight } from "../../signals/signals"
+import { StopLightState } from "../../signals/signals"
 
 type Props = {
-    color: StopLight['color']
+    color: StopLightState['color']
     disabled?: boolean;
 }
 

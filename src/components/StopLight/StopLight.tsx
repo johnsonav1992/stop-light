@@ -1,3 +1,5 @@
+// Libraries
+import { effect } from '@preact/signals-react'
 
 // Components
 import { LightHousing } from '../LightHousing/LightHousing'
@@ -9,7 +11,8 @@ import {
     StopLightState
     , currentLightState
 } from '../../signals/signals'
-import { effect } from '@preact/signals-react'
+
+// Utils
 import { getNextLightColor, getRandomLightDuration } from '../../utils/utils'
 
 effect(() => {
